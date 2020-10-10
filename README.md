@@ -1,22 +1,22 @@
-# parrotsay-api
+# terminal-buddy
 
 ## Install
 
 ```
-npm install --save parrotsay-api
+npm install --save terminal-buddy
 ```
 
 ## Usage
 
 ```js
 // example.js
-const parrotSay = require('parrotsay-api')
+const buddy = require('terminal-buddy')
 
-parrotSay('yaaay')
+buddy('yaaay')
   .then(console.log)
   .catch(console.error)
 ```
-<img src="example.png" width="629">
+<!-- <img src="example.png" width="629"> -->
 <!-- TODO: change it to a GitHub url – see https://git.io/hpm README.md -->
 
 ## Related
@@ -25,4 +25,4 @@ parrotSay('yaaay')
 
 ## License
 
-MIT © [Matheus Fernandes](http://matheus.top)
+MIT © [William Buttenham](https://williambuttenham.com/)
