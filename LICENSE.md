@@ -1,6 +1,7 @@
 # The MIT License (MIT)
 
-Copyright (c) 2016 Matheus Fernandes
+Copyright for portions of Terminal Buddy are held by Matheus Fernandes, 2016 as part of parrotsay-api. 
+All other copyright for Terminal Buddy are held by William Buttenham, 2020.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
