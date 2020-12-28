@@ -1,11 +1,9 @@
 import {join as joinPath} from 'path'
 import {readFile} from 'fs'
 
-import boxen from 'boxen'
+import boxen = require('boxen');
 
-const borderStyle = 'classic'
-
-function say(string, color = 'default-parrot') {
+function say(string: string, color = 'default-parrot') {
   const filename = color + '.txt';
   return new Promise((resolve, reject) => {
     readFile(joinPath('./src/buddies', filename), 'utf-8', (err, data) => {
@@ -13,7 +11,7 @@ function say(string, color = 'default-parrot') {
         reject(err)
       }
 
-      resolve(boxen(string, {borderStyle}) + data)
+      resolve(boxen(string, {borderStyle: boxen.BorderStyle.Classic}) + data)
     })
   })
 }

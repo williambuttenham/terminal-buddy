@@ -2,12 +2,17 @@
   "name": "terminal-buddy",
   "version": "0.1.1",
   "description": "A terminal buddy to help you see some thing happening clearly",
+  "keywords": [
+    "typescript",
+    "console"
+  ],
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "start": "tsc && node dist/example/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,11 +27,14 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/register": "^7.11.5",
+    "@types/boxen": "^3.0.1",
     "babel-plugin-add-module-exports": "^1.0.4",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
+    "nodemon": "^2.0.6",
+    "typescript": "^4.1.3",
     "xo": "^0.33.1"
   },
   "babel": {
@@ -41,6 +49,6 @@
     "semicolon": false
   },
   "dependencies": {
-    "boxen": "^0.8.1"
+    "boxen": "4.2.0"
   }
 }
