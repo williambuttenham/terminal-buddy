@@ -1,8 +1,6 @@
 import {join as joinPath} from 'path'
 import {readFile} from 'fs'
 
-import boxen = require('boxen');
-
 function say(string: string, color = 'default-parrot') {
   const filename = color + '.txt';
   return new Promise((resolve, reject) => {
@@ -11,7 +9,7 @@ function say(string: string, color = 'default-parrot') {
         reject(err)
       }
 
-      resolve(boxen(string, {borderStyle: boxen.BorderStyle.Classic}) + data)
+      resolve(data + '\n' + string)
     })
   })
 }
