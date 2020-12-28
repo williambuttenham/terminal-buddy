@@ -21,7 +21,6 @@ buddy('yaaay')
 
 ## Related
 
-- [Cult of the Party Parrot](http://cultofthepartyparrot.com/)
 - [ANSIart Reddit wiki](https://www.reddit.com/r/ANSIart/wiki/index)
 
 ## License
