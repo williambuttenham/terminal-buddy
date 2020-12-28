@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "test": "xo",
-    "start": "tsc && node dist/example/index.js"
+    "start": "tsc && node dist/example/index.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
