@@ -8,13 +8,13 @@ gulp.task('transpile', () =>
 		.pipe(babel())
 		.pipe(gulp.dest('dist')));
 
-gulp.task('move-the-parrots', () =>
-	gulp.src('src/parrots/*.txt')
+gulp.task('move-the-buddies', () =>
+	gulp.src('src/buddies/*.txt')
 		.pipe(gulp.dest('dist')));
 
 gulp.task('watch', () => {
 	gulp.watch('src/*.js', ['transpile']);
-	gulp.watch('src/parrots/*.txt', ['move-the-parrots']);
+	gulp.watch('src/buddies/*.txt', ['move-the-buddies']);
 });
 
-gulp.task('default', ['watch', 'transpile', 'move-the-parrots']);
+gulp.task('default', ['watch', 'transpile', 'move-the-buddies']);
