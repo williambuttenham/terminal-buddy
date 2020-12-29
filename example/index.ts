@@ -1,4 +1,7 @@
-import say from '../src';
+/* eslint-disable import/no-unresolved */
+/* eslint-disable no-console */
+/* eslint-disable import/extensions */
+import say from '../src/index';
 
 say('yaaay')
   .then(console.log)
