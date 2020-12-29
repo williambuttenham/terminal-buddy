@@ -1,5 +1,8 @@
-import { Buddy, say } from '../src';
+/* eslint-disable import/extensions */
+/* eslint-disable no-console */
 import { resolve } from 'path';
+// eslint-disable-next-line import/no-unresolved
+import { Buddy, say } from '../src';
 
 say('yaaay')
   .then(console.log)
