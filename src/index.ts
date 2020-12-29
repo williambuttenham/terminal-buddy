@@ -9,10 +9,17 @@ enum Buddy {
   Skull = "skull.ans",
 }
 
-async function say(string: string, color: Buddy = Buddy.Default) {
-	const filename = color;
+async function say(string: string, buddy: Buddy | string = Buddy.Default) {
+  let filename = joinPath('./src/buddies', Buddy.Default);
+
+  if ((<any>Object).values(Buddy).includes(buddy.toString())) {
+	  filename = joinPath('./src/buddies', buddy);
+  } else {
+    filename = buddy;
+  }
+
 	return new Promise((resolve, reject) => {
-		readFile(joinPath('./src/buddies', filename), 'utf-8', (err, data) => {
+		readFile(filename, 'utf-8', (err, data) => {
 			if (err) {
 				reject(err);
 			}
