@@ -1,16 +1,21 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable no-console */
-/* eslint-disable import/extensions */
-import say from '../src/index';
+import {Buddy, say} from '../src';
 
 say('yaaay')
   .then(console.log)
   .catch(console.error);
 
-say('yaaay', 'head')
+say('yaaay', Buddy.Banana)
   .then(console.log)
   .catch(console.error);
 
-say('yaaay', 'green-parrot')
+say('yaaay', Buddy.Fish)
+  .then(console.log)
+  .catch(console.error);
+
+say('yaaay', Buddy.Skull)
+  .then(console.log)
+  .catch(console.error);
+
+say('yaaay', Buddy.Parrot)
   .then(console.log)
   .catch(console.error);
