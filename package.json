@@ -35,5 +35,8 @@
   },
   "engines": {
     "node": ">=8.0.0 <14.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.16"
   }
 }
