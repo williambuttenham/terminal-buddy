@@ -3,7 +3,7 @@ import { join as joinPath } from 'path';
 import { readFile } from 'fs';
 
 // eslint-disable-next-line no-shadow
-enum Buddy {
+enum Pal {
   Banana = 'banana.ans',
   Default = 'default.txt',
   Parrot = 'green-parrot.txt',
@@ -11,13 +11,13 @@ enum Buddy {
   Skull = 'skull.ans',
 }
 
-async function say(string: string, buddy: Buddy | string = Buddy.Default) {
-  let filename = joinPath('./src/buddies', Buddy.Default);
+async function say(string: string, pal: Pal | string = Pal.Default) {
+  let filename = joinPath('./src/pals', Pal.Default);
 
-  if ((<any>Object).values(Buddy).includes(buddy.toString())) {
-    filename = joinPath('./src/buddies', buddy);
+  if ((<any>Object).values(Pal).includes(pal.toString())) {
+    filename = joinPath('./src/pals', pal);
   } else {
-    filename = buddy;
+    filename = pal;
   }
 
   return new Promise((resolve, reject) => {
@@ -31,4 +31,4 @@ async function say(string: string, buddy: Buddy | string = Buddy.Default) {
   });
 }
 
-export { Buddy, say };
+export { Pal, say };

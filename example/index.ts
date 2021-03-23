@@ -2,25 +2,25 @@
 /* eslint-disable no-console */
 import { resolve } from 'path';
 // eslint-disable-next-line import/no-unresolved
-import { Buddy, say } from '../src';
+import { Pal, say } from '../src';
 
 say('yaaay')
   .then(console.log)
   .catch(console.error);
 
-say('yaaay', Buddy.Banana)
+say('yaaay', Pal.Banana)
   .then(console.log)
   .catch(console.error);
 
-say('yaaay', Buddy.Fish)
+say('yaaay', Pal.Fish)
   .then(console.log)
   .catch(console.error);
 
-say('yaaay', Buddy.Skull)
+say('yaaay', Pal.Skull)
   .then(console.log)
   .catch(console.error);
 
-say('yaaay', Buddy.Parrot)
+say('yaaay', Pal.Parrot)
   .then(console.log)
   .catch(console.error);
 

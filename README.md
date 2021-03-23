@@ -1,18 +1,18 @@
-# terminal-buddy
+# terminal-pal
 
 ## Install
 
 ```
-npm install --save terminal-buddy
+npm install --save terminal-pal
 ```
 
 ## Usage
 
 ```js
 // example.js
-const buddy = require('terminal-buddy')
+const pal = require('terminal-pal')
 
-buddy('yaaay')
+pal('yaaay')
   .then(console.log)
   .catch(console.error)
 ```

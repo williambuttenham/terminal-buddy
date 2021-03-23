@@ -1,7 +1,7 @@
 {
-  "name": "terminal-buddy",
+  "name": "terminal-pal",
   "version": "0.1.2",
-  "description": "A terminal buddy to help you see some thing happening clearly",
+  "description": "A terminal pal to help you see some thing happening clearly",
   "keywords": [
     "typescript",
     "console"
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/williambuttenham/terminal-buddy.git"
+    "url": "git+https://github.com/williambuttenham/terminal-pal.git"
   },
   "author": "William Buttenham",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/williambuttenham/terminal-buddy/issues"
+    "url": "https://github.com/williambuttenham/terminal-pal/issues"
   },
-  "homepage": "https://github.com/williambuttenham/terminal-buddy#readme",
+  "homepage": "https://github.com/williambuttenham/terminal-pal#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.11.1",
     "@typescript-eslint/parser": "^4.11.1",
