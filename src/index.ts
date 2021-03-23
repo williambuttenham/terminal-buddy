@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
-import { join as joinPath } from 'path';
+import { join } from 'path';
 import { readFile } from 'fs';
 
-// eslint-disable-next-line no-shadow
 enum Pal {
   Banana = 'banana.ans',
   Default = 'default.txt',
@@ -12,10 +11,10 @@ enum Pal {
 }
 
 async function say(string: string, pal: Pal | string = Pal.Default) {
-  let filename = joinPath('./src/pals', Pal.Default);
+  let filename = join('./src/pals', Pal.Default);
 
   if ((<any>Object).values(Pal).includes(pal.toString())) {
-    filename = joinPath('./src/pals', pal);
+    filename = join('./src/pals', pal);
   } else {
     filename = pal;
   }

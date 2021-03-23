@@ -12,9 +12,9 @@ npm install --save terminal-pal
 // example.js
 const pal = require('terminal-pal')
 
-pal('yaaay')
+say('yaaay', Pal.Banana)
   .then(console.log)
-  .catch(console.error)
+  .catch(console.error);
 ```
 <img src="example.png" width="629">
 
