@@ -6,13 +6,13 @@
     "typescript",
     "console"
   ],
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "./node_modules/.bin/eslint */*.ts",
-    "start": "tsc && node dist/example/index.js",
+    "start": "tsc && node dist/example.js",
     "build": "tsc"
   },
   "repository": {

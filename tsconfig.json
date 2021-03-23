@@ -10,7 +10,7 @@
         "strict": true
     },
     "files": [
-        "example/index.ts",
+        "example.ts",
         "src/index.ts"
     ]
 }
