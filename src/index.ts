@@ -2,6 +2,7 @@
 import { join } from 'path';
 import { readFile } from 'fs';
 
+// eslint-disable-next-line no-shadow
 enum Pal {
   Banana = 'banana.ans',
   Default = 'default.txt',
